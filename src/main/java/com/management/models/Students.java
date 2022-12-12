@@ -1,12 +1,12 @@
 package com.management.models;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
+@Entity
+@Table(name = "student_data")
 public class Students {
 
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "studentId")
     private Long id;
@@ -24,6 +24,6 @@ public class Students {
     private String branchName;
 
     @OneToOne
-    private School schoolName;
+    private Schools schoolName;
 
 }
