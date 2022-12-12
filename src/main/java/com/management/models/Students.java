@@ -3,6 +3,7 @@ package com.management.models;
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.OneToOne;
 
 public class Students {
 
@@ -21,5 +22,8 @@ public class Students {
 
     @Column(name = "branch")
     private String branchName;
+
+    @OneToOne
+    private School schoolName;
 
 }
