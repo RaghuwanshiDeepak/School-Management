@@ -16,5 +16,8 @@ public class Students {
     @Column(name = "lastName")
     private String lastName;
 
+    @Column(name = "fee")
+    private Long fees;
+
 
 }
