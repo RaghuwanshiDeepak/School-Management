@@ -12,4 +12,9 @@ public class Students {
 
     @Column(name = "studentName")
     private String firstName;
+
+    @Column(name = "lastName")
+    private String lastName;
+
+
 }
